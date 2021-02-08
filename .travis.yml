@@ -6,7 +6,9 @@ os:
 
 arch:
   - amd64
-  - arm64
+  - arm64-graviton2
+virt: lxd
+group: edge
 
 julia:
   - 1.5
@@ -14,7 +16,6 @@ julia:
 
 matrix:
   allow_failures:
-    - os: osx
     - julia: nightly
     - arch: arm64
 
